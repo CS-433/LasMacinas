@@ -22,6 +22,7 @@ To train and run the model:
 
 ## File structure
 The underdash i (_i) means there is one file per PRI jet number(0,1,2,3)  
+.
 ├── data  
    ├── <sample-submission.csv>  
    ├── <train.csv>  
