@@ -1,14 +1,15 @@
 # LAS MACINAS - MACHINE LEARNING PROJECT 1
-Constance Gontier, Giana Crovetto, Hendrik Hilsberg
+Constance Gontier, Gianna Crovetto, Hendrik Hilsberg
 
 ## Tutorial
 
 To run with our weights saved and our testing dataset cleaned and augmented: 
-1. Download the files "data" and "logfiles"
-2. Just launch "run.py"
+1. Download train an test sets [link](https://www.aicrowd.com/challenges/epfl-machine-learning-higgs/dataset_files) and put them in the data file
+2. Download the files in "logfiles"
+3. Just launch "run.py"
 
 To train and run the model: 
-1. Download train an test sets [link](https://www.aicrowd.com/challenges/epfl-machine-learning-higgs/dataset_files) and put them in a data file
+1. Download train an test sets [link](https://www.aicrowd.com/challenges/epfl-machine-learning-higgs/dataset_files) and put them in the data file
 2. Create a file named logfile 
 3. In "config.py", set the MODE to "Train" 
 4. Launch "train.py" 
