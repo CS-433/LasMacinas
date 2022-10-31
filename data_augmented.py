@@ -66,8 +66,7 @@ def feature_generation(data, degree):
 
     # Generate polynoms 
     expanded_data = poly_generation(expanded_data,col_nbr,degree)
-    # Generate cross-terms
-    col_nbr = np.arange(feature_start,expanded_data.shape[1])
+    # Generate cross-terms on col_nbr + 30 of the new columns from poly extension
     expanded_data = CT_generation(expanded_data,col_nbr)
     # Generate sine and cosine    
     expanded_data = sin_cos_generation(expanded_data,col_nbr)

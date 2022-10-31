@@ -1,6 +1,4 @@
-# LasMacinas
-ml-project-1-lasmacinas created by GitHub Classroom
-
+# LAS MACINAS - MACHINE LEARNING PROJECT 1
 Constance Gontier, Giana Crovetto, Hendrik Hilsberg
 
 ## Tutorial
@@ -23,21 +21,20 @@ To train and run the model:
 ## File structure
 The underdash i (_i) means there is one file per PRI jet number(0,1,2,3)  
 
+├── config.py  
+├── cross_validation.py  
+├── data_augmented.py  
+├── helpers.py  
+├── implementations.py  
+├── loss.py  
+├── models.py  
+├── preprocessing.py  
+├── run.py  
+└── train.py  
 ├── data  
 │   ├── <sample-submission.csv>  
 │   ├── <train.csv>  
-│   └── <test.csv>  
-├── code  
-│   ├── config.py  
-│   ├── cross_validation.py  
-│   ├── data_augmented.py  
-│   ├── helpers.py  
-│   ├── implementations.py  
-│   ├── loss.py  
-│   ├── models.py  
-│   ├── preprocessing.py  
-│   ├── run.py  
-│   └── train.py  
+│   └── <test.csv>   
 ├── logfiles  
 │   ├── col_i.csv  
 │   ├── cross_array_i.csv  
@@ -46,6 +43,8 @@ The underdash i (_i) means there is one file per PRI jet number(0,1,2,3)
 │   ├── sample-submission.csv  
 │   └── weights_i.csv  
 └── README.md
+
+
 
 ## File description
 *config.py* contains constants, modulable modes and paths  

@@ -3,14 +3,13 @@ import numpy as np
 #==============================================================================
 # Paths
 #==============================================================================
-DATA_TRAIN_PATH = '../data/train.csv'
-DATA_TEST_PATH = '../data/test.csv'
-SUBMISSION_PATH = '../logfiles/sample-submission.csv'
-W_PATH = '../logfiles/weights'
-COL_PATH = '../logfiles/col'
-CROSS_ARRAY_PATH = '../logfiles/cross_array'
-AUGMENTED_TRAIN_PATH = '../logfiles/data_augmented'
-AUGMENTED_TEST_PATH ='../logfiles/test_augmented'
+DATA_TRAIN_PATH = 'data/train.csv'
+DATA_TEST_PATH = 'data/test.csv'
+SUBMISSION_PATH = 'logfiles/submission_final.csv'
+W_PATH = 'logfiles/weights'
+COL_PATH = 'logfiles/col'
+CROSS_ARRAY_PATH = 'logfiles/cross_array'
+AUGMENTED_TEST_PATH ='logfiles/test_augmented'
 #==============================================================================
 # Train
 #==============================================================================
@@ -20,7 +19,10 @@ LAMBDA=0.1
 
 METHOD = 'Ridge_regression' 
 METH_REPLACEMENT = 'median'
-MODE = 'train' #train or test or validation
+# validation: to choose and validate our model (should be used when running "train.py")
+# train: to test our model and save our weights (should be used when running "train.py")
+# test: to test our model trained (should be used when running "run.py")
+MODE = 'test' 
 #==============================================================================
 # Cross-validation
 #==============================================================================
