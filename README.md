@@ -22,22 +22,22 @@ To train and run the model:
 
 ## File structure
 The underdash i (_i) means there is one file per PRI jet number(0,1,2,3)  
-.
+
 ├── data  
-   ├── <sample-submission.csv>  
-   ├── <train.csv>  
-   └── <test.csv>  
+|   ├── <sample-submission.csv>  
+|   ├── <train.csv>  
+|  └── <test.csv>  
 ├── code  
-   ├── config.py  
-   ├── cross_validation.py  
-   ├── data_augmented.py  
-   ├── helpers.py  
-   ├── implementations.py  
-   ├── loss.py  
-   ├── models.py  
-   ├── preprocessing.py  
-   ├── run.py  
-   └── train.py  
+|   ├── config.py  
+|   ├── cross_validation.py  
+|   ├── data_augmented.py  
+|   ├── helpers.py  
+|   ├── implementations.py  
+|   ├── loss.py  
+|   ├── models.py  
+|   ├── preprocessing.py  
+|   ├── run.py  
+|   └── train.py  
 ├── logfiles  
    ├── col_i.csv  
    ├── cross_array_i.csv  
