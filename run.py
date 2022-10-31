@@ -20,11 +20,11 @@ for cat in JET_CATEGORIES:
 
     print('Perform data augmentation')
     # Augment testing data and save  
-    # If you want to do it again, you can de uncomment the next 3 lines and comment the 4th
-    #x_test =  preprocessed_data_test[cat][:,2:]
-    #x_test_augmented = feature_generation(x_test, BEST_DEGREES_CAT[cat])
-    #np.save((AUGMENTED_TEST_PATH + '_'+ str(cat)), x_test_augmented)
-    x_test_augmented = np.load((AUGMENTED_TEST_PATH + '_' + str(cat) + '.npy'))
+    # If you want to do it again, you can comment the next 3 lines and decomment the 4th
+    x_test =  preprocessed_data_test[cat][:,2:]
+    x_test_augmented = feature_generation(x_test, BEST_DEGREES_CAT[cat])
+    np.save((AUGMENTED_TEST_PATH + '_'+ str(cat)), x_test_augmented)
+    #x_test_augmented = np.load((AUGMENTED_TEST_PATH + '_' + str(cat) + '.npy'))
 
     # Get predicted values for testing set
     yt_test = np.where(x_test_augmented@weights.T > 0.0, 1, -1)
